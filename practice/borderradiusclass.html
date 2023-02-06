@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        .border{
+            background: brown;
+            border-radius: 20px;
+            padding:20px;
+            width:200px;
+            height:180px;
+        }
+        .border1{
+            border-radius: 15px 10px 15px 10px;
+            background: #441abc;
+            padding-bottom:5px;
+            padding-left: 20px;
+            width:180px;
+            height:175px;
+        }
+        #border2{
+            border-radius: 15px;
+            border:2px dashed red;
+            padding:15px;
+            width:250px;
+            height:200px;
+        }
+        #border3{
+            border-radius: 25px;
+            border-style: 1px solid brown;
+            background-image: url("back.jpg");
+            background-position: right top;
+            background-repeat: repeat;
+            padding:25px;
+            width:250px;
+            height:200px;
+        }
+        
+    </style>
+</head>
+<body>
+    
+    <h1>Rounder border-radius example</h1>
+    <div class="border">
+        <div class="border1"></div>
+        </div>
+    <p>Rounded border with specific border style</p>
+    <p id="border2">Dashed Border </p>
+    <p>Rounded border with specific background image</p>
+    <p id="border3"></p>
+    
+</body>
+</html>

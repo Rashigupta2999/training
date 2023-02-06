@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+div > p,h3 {
+  background-color: lightcoral;
+}
+p{
+    background-color: lightblue;
+}
+</style>
+</head>
+<body>
+
+<h2>Child Selector</h2>
+
+<!--The child selector (>) selects all elements that are the children of a specified element.-->
+
+<div>
+  <p>Under the div.</p>
+  <p>Under the div.</p>
+  <h3>Child of div element</h3>
+  <section>
+    <!-- not Child but Descendant -->
+    <p>Under the div (it is inside a section element).</p>
+  </section>
+  <p>Under the div.</p>
+</div>
+
+<p>Not in a div.</p>
+<p>Not in a div.</p>
+
+</body>
+</html>
+
+

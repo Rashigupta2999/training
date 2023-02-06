@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+
+  /****************** Match the elements whose having starting value top or specified value followed by hyphen****************
+[class|=top] {
+  background: green;
+}*/
+  /****************** Match the elements only whose having starting value top or followed by hyphen not require whole word top****************
+
+[class^="top"]
+{
+  text-decoration: line-through;
+  text-decoration-color:red;
+}*/
+
+  /****************** Match the elements only whose having ending value test or followed by hyphen not require whole word test ****************
+[class$="test"]
+{
+  border: 2px solid brown;
+  border-radius: 1px;
+}*/
+
+/****************** Match the elements only whose attr value contain specified value not require whole word ****************
+*/
+[class*="to"]{
+  outline: 2px solid red;
+}
+</style>
+</head>
+<body>
+
+
+
+<h1 class="top-header">Welcome the test</h1>
+<p class="topic">Hello world test!</p>
+<p class="contenttop">Are you learning CSS?</p>
+<p  class="simple-test">Hello Kitty</p>
+<p class="world softest">Hiiii softest</p>
+</body>
+</html>
+
+

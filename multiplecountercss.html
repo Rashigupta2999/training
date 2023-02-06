@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+body{
+    counter-reset:section;
+}
+h1{
+    counter-reset:subsection;
+}
+h1::before{
+    counter-increment:section;
+    content:"Section" counter(section) ": ";
+}
+
+h2::before{
+    counter-increment:subsection;
+    content :counter(section) "." counter(subsection) " "  ;
+}
+</style>
+</head>
+<body>
+    <h1>HTML/CSS tutorials</h1>
+    <h2>HTML</h2>
+    <h2>CSS </h2>
+    <h2>Wordpress</h2>
+    <h2>Javascript</h2>
+
+    <h1>Programming languages</h1>
+    <h2>Java</h2>
+    <h2>Python</h2>
+    <h2>C++</h2>
+    <h2>C</h2>
+
+    <h1>Browsers</h1>
+    <h2>Google</h2>
+    <h2>Mozilla</h2>
+    <h2>Opera</h2>
+</body>
+</html>

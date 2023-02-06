@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+    p::first-line {
+        color:blue;
+        text-transform: uppercase;
+        text-decoration: underline;
+    }
+    p.intro::first-letter {
+        color:red;
+        text-decoration: overline underline;
+        font-size: 50px;
+        border: 1px solid brown;
+    }
+    h1::before{
+        content: url("project.gif");
+    }
+    h1::after{
+        content: url("pr.jpeg")
+    }
+
+        </style>
+    </head>
+    <body>
+        <h1>This is before property</h1>
+        <p>No one shall be subjected to arbitrary arrest, detention or exile. 
+            Everyone is entitled in full equality to a fair and public hearing by an independent and impartial tribunal, 
+                in the determination of his rights and obligations and of any criminal charge against him. 
+            No one shall be subjected to arbitrary interference with his privacy, family, home or correspondence, 
+            nor to attacks upon his honour and reputation. Everyone has the right to the protection of the law against 
+            such interference or attacks.</p>
+            <p class="intro">No one shall be subjected to arbitrary interference with his privacy, family, home or correspondence, 
+                nor to attacks upon his honour and reputation.</p>
+    </body>
+</html>

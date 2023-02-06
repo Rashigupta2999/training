@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+div p, h3{
+  background-color: yellow;
+}
+section p,h3{
+    background-color: green;
+}
+</style>
+</head>
+<body>
+
+<h2>Descendant Selector</h2>
+
+<!--The descendant selector matches all elements that are descendants of a specified element-->
+
+<div>
+   <h3>It is also the element of div</h3>
+  <p>It is in the div.</p>
+  <p>It is in the div.</p>
+  <section>
+    <p>It is in the div.</p>
+   <h3>Elements under section</h4>
+</section>  <!--elements of div and section-->
+  <p>Under div</p>
+
+</div>
+
+<p>Not in a div or section.</p>
+<p>Not in a div or section.</p>
+
+</body>
+</html>
+
+

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style> 
+div {
+  width: 100px;
+  height: 100px;
+  background: red;
+  position: relative;
+  animation-name: example;
+  animation-duration: 7s;  
+  animation-fill-mode: forward;    /* In forward it will take keyframe which is define in last keyframe*/
+
+/*  SHORTHAND PROPERTY:    animation: example 5s linear 2s infinite alternate;*/
+}
+
+/* @keyframes example {
+  to {top: 20px;}
+  from {top: 300px; background-color: blue;}
+}
+@keyframes example {
+  from {top: 0px;}
+  to {top: 300px; background-color: blue;}         In backward it will take keyframe which is define in first keyframe
+}
+@keyframes example {
+  to {top: 20px; background-color: blue;}          This is the both property in fill mode
+  from {top: 300px;}
+}*/
+
+@keyframes example {
+  to {top: 20px; background-color: yellow;}
+  from {top: 300px; background-color: blue;}
+}
+
+
+</style>
+</head>
+<body>
+
+<h1>CSS Animation</h1>
+
+<p>Let the div element retain the style values set by the last keyframe when the animation ends:</p>
+
+<div></div>
+
+</body>
+</html>
+
+

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+p::first-letter {
+  color: #bbccdd;
+  font-size: xx-large;
+}
+p::first-line{
+    color: red;
+    font-size: small-caps;
+    
+}
+h1::before{
+    content :url(example.jpeg);
+}
+h2::after{
+    content :url(image.gif);
+    float:right;
+}
+::selection{
+    color:red;
+    background:gray;
+}
+</style>
+</head>
+<body>
+
+<h1>This is the ::before element in pseudo elements</h1></br></br>
+<p>Select some text on this screen. text convert  in purple colour and background convert in gray colour</p>
+<p> Here is the example for both pseudo elements i.e. first-letter and first-line You can use the ::first-letter pseudo-element to add a special effect to the first character of a text!
+   and You can use the ::first-line pseudo-element to add a special effect to the first line of a text!</p></br></br>
+<h2> This is the ::after element in pseudo elements</h2>
+
+</body>
+</html>
+
+

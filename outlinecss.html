@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+p.ex1{
+    outline-color:#FF0000; /* or we can write as Shorthand property is  p.ex1{outline:solid;}*/
+    outline-style:solid;
+    outline-width:thin;
+    border:1px solid brown;
+}
+p.ex2{
+    border:1px solid black;
+    outline-style:dashed;
+    outline-width:thick;
+    outline-color:rgb(255,0,0);
+    outline-offset:15px; /*offset is used to add space b/w outline and border of an element*/
+    outline:2px solid red; 
+}
+p.ex3{
+    border:1px solid blue;
+    outline-style:dotted;
+    outline-width:medium;
+    outline-color:green;
+}
+p.ex4{
+    border:1px solid yellow;
+    outline-style:ridge;
+    outline-width:4px;
+    outline-color:purple;
+}
+</style>
+</head>
+<body>
+    <p class="ex1">A Thin property</p>
+    <p class="ex2">A thick property</p>
+    <p class="ex3">A medium property</p>
+    <p class="ex4">A 4px thick outline</p>
+</body>

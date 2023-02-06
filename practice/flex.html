@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        .flex{
+            background-color: lightblue;
+            display:flex;
+            height:350px;
+            gap:10px; /*define a gap between child items*/
+            flex-direction: column;      /* use column, column-reverse, row-reverse as direction also */
+            flex-wrap:wrap;    /* use wrap, nowrap as flex wrap also*/
+           /* flex-flow: row nowrap;   Shorthand property for using flex direction ans flex wrap together */
+         /*  Justify-content:center;     (flex-start, flex-end, space-around, space-between) used to align the flex items */
+          /*  align-items: baseline;       /* center, flex-start, flex-end, stretch, when we use align-items we need to define height as well */  
+          align-content:center;            /* (flex-start, flex-end, space-around, space-between,)when we use align-items we need to define height and overflow*/
+          overflow: scroll;
+       
+        }
+        .flex > div{
+            background-color: lightcyan;
+            color:black;
+            font-size: 30px;
+            width:100px;
+            line-height: 75px;
+            text-align: center;
+            border:1px solid blue;
+            }
+    </style>
+</head>
+<body>
+         <h1>Example of Flexbox</h1>
+         <div class="flex">
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+            <div>4</div>
+            <div>5</div>
+            <div>6</div>
+            <div>7</div>
+            <div>8</div>
+            <div>9</div>
+            <div>10</div>
+            <div>11</div>
+            <div>12</div>
+            <div>13</div>
+            <div>14</div>
+         </div>
+</body>
+</html>

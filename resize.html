@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style> 
+div {
+  border: 2px solid;
+  padding: 20px; 
+  height: 100px;
+  resize: vertical;       /* or we can use width: 300px, resize: horizontal or resize: both only without height and width so it will take height and width automatically*/ 
+  overflow: auto;                               
+                                           
+}
+textarea#text{
+  resize:none;
+  display :block;
+}
+
+</style>
+</head>
+<body>
+
+<h1>The resize Property</h1>
+
+<div>
+  <p>Let the user resize only the width of this div element.</p>
+  <p>To resize: Click and drag the bottom right corner of this div element.</p>
+  <p>To resize: Click and drag the bottom right corner of this div element.</p>
+
+<p>To resize: Click and drag the bottom right corner of this div element.</p>
+
+<p>To resize: Click and drag the bottom right corner of this div element.</p>
+
+</div><br></br>
+<textarea id="text">Text area not resizable</textarea><br></br>
+<textarea>Resizable</textarea>
+
+</body>
+</html>
+
+

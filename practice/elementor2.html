@@ -1,0 +1,770 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Document</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&family=Work+Sans:wght@100;200&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&family=Work+Sans:wght@100;200;400&display=swap" rel="stylesheet">
+
+<style>
+* {
+box-sizing: border-box;
+}
+
+body {
+margin: auto;
+padding: 0px;
+top: 0px;
+background-color: #ECEDE8;
+overflow-y: scroll;
+overflow-x:auto
+}
+.header {
+background-color: #c8cac1;
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+max-width: 100%;
+color: #dad6d1;
+padding:20px;
+}
+.row1{
+width:50%;
+padding-left:40px;
+justify-content: center;
+align-items: center;
+}
+.row2{
+display: flex;
+flex-direction: row;
+width:50%;
+justify-content: space-evenly;
+align-items:center;
+padding:20px 0px;
+
+}
+a{
+font-family: 'Work Sans', sans-serif;
+font-size:18px;
+letter-spacing: 2px;
+line-height: 14px;
+color:#4f4429;
+font-weight: bolder;
+text-decoration: none;
+}
+.aclass{
+    width:630px;
+display: inline-block;
+font-family: 'Work Sans', sans-serif;
+font-size:18px;
+border-radius: 31px;
+color:#4f4429;
+text-align: center;
+font-weight: bolder;
+text-decoration: none;
+line-height: 2em;
+}
+.aclass1{
+display: inline-block;
+font-family: 'Work Sans', sans-serif;
+font-size:18px;
+text-transform: uppercase;
+font-style: italic;
+color:#4f4429;
+text-align: center;
+font-weight: bold;
+text-decoration: underline;
+line-height: 2em;
+}
+.aclass2{
+    width:80vw;
+display: inline-block;
+font-family: 'Work Sans', sans-serif;
+font-size:18px;
+border-radius: 31px;
+color:white;
+text-align: center;
+font-weight: bolder;
+text-decoration: none;
+line-height: 2em;
+}
+
+
+.main-container{
+width:95%;
+max-width: 1300px;
+margin:auto;
+display: flex;
+flex-direction: row;
+}
+.flexcontainer{
+display: flex;
+flex-direction: row;
+flex-wrap: nowrap;
+width:100%;
+background-color: #c8cac1;
+}
+.flexcontainer1{
+padding-top:60px;
+display: flex;
+flex-direction: row;
+flex-wrap: nowrap;
+}
+.flexcontainer2{
+display: flex;
+flex-direction: row;
+flex-wrap: nowrap;
+padding-top:80px;
+}
+.flexcontainer3{
+display: flex;
+flex-direction: row;
+flex-wrap: nowrap;
+padding-top:80px;
+}
+.flexcontainer4{
+display: flex;
+flex-direction: row;
+flex-wrap: nowrap;
+justify-content: center;
+align-items: center;
+border:2px solid #4f4429;
+margin-top:10%;
+background-color: #c8cac1;
+}
+.flexcontainer5{
+padding-top:80px;
+display: flex;
+flex-direction: row;
+flex-wrap: nowrap;
+}
+.flexcontainer6{
+padding-top:80px;
+display: flex;
+flex-direction: row;
+flex-wrap: nowrap;
+}
+.flexcontainer7{
+margin-top:30px;
+display: flex;
+flex-direction: row;
+flex-wrap: nowrap;
+background-color: #c8cac1;
+padding-top:60px;
+padding-bottom:60px;
+}
+
+
+
+.undercontainer1{
+width:50%;
+display: flex;
+flex-direction: row;
+flex-wrap: nowrap;
+
+}
+.undercontainer2{
+width:50%;
+display: flex;
+flex-direction: column;
+flex-wrap: nowrap;
+justify-content: flex-start;
+align-items: flex-start;
+gap:200px;
+
+}
+.undercontainer3{
+border-radius: 20px;
+border:2px solid #4f4429;
+background-color: #c8cac1;
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+gap:200px;
+
+}
+.undercontainer4{
+display: flex;
+flex-direction: column;
+justify-content: flex-start;
+align-items: flex-start;
+flex-wrap: nowrap;
+gap:88px;
+padding-bottom: 40px;
+
+}
+.undercontainer5{
+    width:100%;
+display: flex;
+flex-direction: row;
+justify-content: flex-start;
+align-items: flex-start;
+flex-wrap: nowrap;
+}
+.undercontainer6{
+width:80%;
+display: flex;
+flex-direction: row;
+justify-content: flex-start;
+align-items: flex-start;
+flex-wrap: nowrap;
+}
+.undercontainer7{
+display: flex;
+flex-direction: row;
+justify-content: flex-start;
+align-items: flex-start;
+flex-wrap: nowrap;
+gap:40px;
+}
+.undercontainer8{
+width:50%;
+display: flex;
+flex-direction: row;
+justify-content: flex-start;
+align-items: flex-start;
+flex-wrap: nowrap;
+border-radius: 0 400px 400px 0;
+}
+.undercontainer9{
+width:50%;
+display: flex;
+flex-direction: column;
+justify-content: flex-start;
+align-items: flex-start;
+flex-wrap: nowrap;
+gap:40px;
+}
+.undercontainer10{
+width:50%;
+display: flex;
+flex-direction: row;
+justify-content: flex-start;
+align-items: flex-start;
+flex-wrap: nowrap;
+border-radius: 0 400px 400px 0;
+padding-left: 70px;
+}
+.undercontainer11{
+    width:100%;
+display: flex;
+flex-direction: column;
+justify-content: flex-start;
+align-items: flex-start;
+flex-wrap: nowrap;
+border-radius: 25px 25px 25px 25px;
+padding: 20px;
+background-image: url('hockey6.jpeg');
+background-size: cover;
+background-attachment: fixed;
+}
+
+
+
+
+.pclass1{
+font-size:18px;
+font-family: 'Work Sans', sans-serif;
+color:#4f4429;
+margin:0;
+line-height: 1.3em;
+word-spacing: 2px;
+font-weight: bold;
+padding-left:30px;
+
+}
+.pclass2{
+font-size:18px;
+font-family: 'Work Sans', sans-serif;
+color:#4f4429;
+margin:0;
+line-height: 24px;
+letter-spacing: -1px;
+font-weight: 300;
+text-align: center;
+
+}
+.pclass3{
+font-size:18px;
+font-family: 'Work Sans', sans-serif;
+color:#4f4429;
+margin:0;
+line-height: 27px;
+font-weight: 300;
+
+}
+
+
+.under1{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+.under2{
+    width:100%;
+    display:flex;
+    flex-wrap: nowrap;
+    gap:70px;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+}
+.under3{
+    width:20%;
+    height:60px;
+    border-radius:30px;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #c8cac1;
+
+}
+.under4{
+    width:33.3%;
+    border:2px solid #4f4429;
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    border-radius:20px;
+    gap:50px;
+    padding:61px 20px 40px;
+
+}
+.under5{
+    width:33.3%;
+    border:2px solid #4f4429;
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    border-radius:20px;
+    gap:66px;
+    padding:39px 20px;
+
+}
+.under6{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding:20px 0;
+
+}
+
+.under7{
+    display:flex;
+    flex-direction: row;
+}
+.under8{
+    display:flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+.under9{
+    display:flex;
+    flex-direction: column;
+    color:white;
+    font-size: 5.2vw;
+}
+.under10{
+    display:flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap:40px;
+    padding-top:200px;
+}
+
+
+.row3{
+width:50%;
+display: flex;
+flex-direction: column;
+gap:25px;
+padding-top:40px;
+
+}
+.row4{
+width:50%;
+display: flex;
+flex-direction: row;
+padding-bottom:40px;
+}
+.flexcontainer .main-container{
+gap:53px;
+}
+.flexcontainer1 .main-container{
+gap:28px;
+}
+.flexcontainer5 .main-container{
+gap:28px;
+}
+.flexcontainer6 .main-container{
+gap:100px;
+}
+
+
+.row5{
+display: flex;
+flex-direction: row;
+}
+.col1{
+    border-radius:31px 31px 31px 31px;
+    border:2px solid #4f4429;
+}
+.col2{
+    display:flex;
+    flex-direction: row;
+    border:1px solid black;
+}
+
+.underbtn a:hover{
+    background-color: #4f4429;
+    color:white;
+}
+.underbtn1 a:hover{
+    background-color: white;
+    color:#4f4429;
+}
+
+h1{
+font-size:9.5vw;
+font-family: 'Work Sans', sans-serif;
+letter-spacing: 5px;
+color:#4f4429;
+margin:0;
+line-height: 1em;
+}
+h3{
+font-size:36px;
+font-family: 'Arial';
+text-transform: uppercase;
+font-weight: bold;
+color:#4f4429;
+margin:0;
+line-height: 32px;
+text-align: center;
+}
+.h3class{
+font-size:36px;
+font-family: 'Arial';
+text-transform: uppercase;
+font-weight: bold;
+color:#4f4429;
+margin:0;
+line-height: 32px;
+text-align: center;
+padding-top:23px;
+
+}
+
+h2{
+font-size:5.2vw;
+font-family: 'Work Sans', sans-serif;
+text-transform: uppercase;
+font-weight: 600;
+color:#4f4429;
+margin:0;
+line-height: 1.2em;
+padding-top:20px;
+padding-left:30px;
+}
+h4{
+font-size:22px;
+font-family: 'Work Sans', sans-serif;
+font-weight: normal;
+text-transform: capitalize;
+font-style: italic;
+letter-spacing: -1px;
+color:#4f4429;
+line-height: 27px;
+}
+
+
+.h2class{
+font-size:5.2vw;
+font-family: 'Work Sans', sans-serif;
+text-transform: uppercase;
+font-weight: 600;
+color:#4f4429;
+margin:0;
+line-height: 1.2em;
+padding:0px;
+}
+
+
+p{
+font-size:18px;
+font-family: 'Work Sans', sans-serif;
+color:#4f4429;
+margin:0;
+line-height: 1.3em;
+word-spacing: 2px;
+font-weight: lighter;
+
+}
+.buttondiv {
+            align-items: center;
+            justify-content: center;
+            display: flex;
+            
+        }
+        .buttondiv1 {
+            align-items: center;
+            justify-content: center;
+            display: flex;
+            padding-left:30px;
+            padding-bottom:30px;
+            
+        }
+
+        .underbtn {
+            border-radius: 31px;
+            text-align: center;
+            width:630px;
+        }
+        .underbtn1 {
+            border:1px solid white;
+            border-radius: 31px;
+            text-align: center;
+            width:80vw;
+        }
+.aclass1:hover {
+    transform: translateY(-10px);
+    transition-duration: 1.5s;
+
+}
+.under4:hover{
+    background-color: #c8cac1;
+}
+.under5:hover{
+    background-color: #c8cac1;
+}
+.under8 svg{
+    fill:#4f4429;
+    width:60px;
+    height:45px;
+}
+.under9 svg{
+    fill:#4f4429;
+    width:60px;
+    height:45px;
+}
+.footer{
+    display: flex;
+    padding:20px 0;
+}
+.footer1{
+    width:50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+.f1{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+.footer2{
+    width:50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+    
+</style>
+</head>
+<body>
+<div class="header">
+<div class="row1">
+<img src="tennis.svg">
+</div>
+<div class="row2">
+<a href="#">Home</a>
+<a href="#">Our Club</a>
+<a href="#">Lessons</a>
+<a href="#">Contact Us</a>
+<a href="#">610-269-0851</a>
+</div>
+</div>
+<div class="flexcontainer">
+<div class="main-container">
+<div class="row3">
+<h1>LEARN TO PLAY</h1>
+<p>Are you ready to serve up an ace? Our team of professional tennis instructors will help you become the best player you can be. We offer private and group lessons for all ages at a gorgeous 8-court facility located in Downingtown, PA!</p>
+<div class="row5">
+    <img src="hockey2.jpeg" style="border-radius:400px 400px 400px 400px; width:583px;height:220px;object-fit: cover;">
+</div>
+<div class="col1">
+    <div class="buttondiv">
+    <div class="underbtn">
+    <a href="#" class="aclass" style="font-style: italic;letter-spacing: 3px;">Discover All lessons</a></div>
+</div>
+</div>
+
+</div>
+
+<div class="row4">
+<img src="hockey.jpeg" style="border-radius: 2% 2% 2% 2%; width:610px; height:750px">
+</div>
+</div></div>
+<div class="flexcontainer1">
+    <div class="main-container">
+        <div class="undercontainer1">
+            <img src="hockey3.jpeg" style="width:645px; border-radius: 30px;object-fit: cover;">
+             
+        </div>
+        <div class="undercontainer2">
+            <div class="undercontainer3">
+                <h2>welcome <br>to the</br> tennis a <br>club</br></h2>
+                <div class="undercontainer4">
+                    <div class="under1">
+                        
+                    <p class="pclass1">The Tennis A club was founded in 1998 with the goal of<br>creating and promoting a community of tennis lovers in the</br>Downingtown, Pennsylvania area. We offer group and<br>private lessons for players of all ages and skill levels – from </br>beginner to advanced. No matter what your experience level<br>is, we would love to welcome you to the club!</br></p></div>
+                    <div class="col1">
+                        <div class="buttondiv">
+                        <div class="underbtn">
+                        <a href="#" class="aclass" style="font-style: italic;letter-spacing: 3px;">Discover All lessons</a></div>
+                    </div>
+                    </div>
+                    
+                    </div>
+                    
+                
+                </div>
+                
+            </div>
+            
+        </div>
+        
+    </div>
+</div>
+<div class="flexcontainer2">
+    <div class="main-container">
+        <div class="undercontainer5">
+            <div class="under2">
+                <div class="under3">
+
+                    <img src="circle.png" style="width:100px; height:100px">
+                    
+                </div>
+                <div class="undercontainer6">
+                <h2 class="h2class">tennis lessons for all</h2></div>
+            </div>
+                    </div>
+    </div>
+</div>
+<div class="flexcontainer3">
+    <div class="main-container">
+        <div class="undercontainer7">
+            <div class="under4">
+                    <h3 style="margin:0">ADULT GROUP LESSONS</h3>
+                    <p class="pclass2">Lorem ipsum dolor sit amet, consectet adipiscing elit,sed do eiusm por incididunt ut labore et dolore magna aliqua.</p>
+                    <a class="aclass1" href="#">Learn more</a>
+                
+            </div>
+            <div class="under4">
+                <h3 style="margin:0">Youth GROUP LESSONS</h3>
+                <p class="pclass2">Lorem ipsum dolor sit amet, consectet adipiscing elit,sed do eiusm por incididunt ut labore et dolore magna aliqua.</p>
+                <a class="aclass1" href="#">Learn more</a>
+            
+            </div>
+            <div class="under5">
+                <h3 class="h3class" style="margin:0">private coaching</h3>
+                <p class="pclass2">Lorem ipsum dolor sit amet, consectet adipiscing elit,sed do eiusm por incididunt ut labore et dolore magna aliqua.</p>
+                <a class="aclass1" href="#">Learn more</a>
+            </div>
+           
+        </div>
+    </div>
+</div>
+<div class="flexcontainer4">
+    <div class="main-container">
+        <div class="under6">
+            <h2 style="padding:0">kind words from our players</h2>
+        </div>
+    </div>
+</div>
+<div class="flexcontainer5">
+    <div class="main-container">
+       <div class="undercontainer8">
+        <img src="hockey4.jpeg" style="border-radius: 0 400px 400px 0;">
+       </div>
+       <div class="undercontainer9">
+        <div class="under8">
+            <svg xmlns="http://www.w3.org/2000/svg" id="a" width="75" height="58" viewBox="0 0 75 58"><path d="M0,58H18.8341v-15.6023c0-12.5498,6.0538-23.4036,13.1166-33.579L21.1883,0C7.7354,10.8538,0,28.8304,0,42.7368v15.2632Zm43.0493,0h18.8341v-15.6023c0-12.5498,6.0538-23.4036,13.1166-33.579L64.2377,0c-13.453,10.8538-21.1884,28.8304-21.1884,42.7368v15.2632Z"></path></svg>
+        </div>
+        <div class="under8">
+            <p class="pclass3">I’m so glad I signed up for lessons with the Tennis A club!<br>I’ve been playing tennis for a few years but decided to</br>take private lessons to reach the next level. Konrad is a<br>true professional and he helped me achieve my goals.</br> Also, the facilities are wonderful! There are 8 courts and<br>everything is very clean and well-kept!</br></p>
+        </div>
+        <div class="under8">
+            <h4>kirsty Harynes</h4>
+        </div>
+       </div>
+    </div>
+</div>
+
+
+
+
+<div class="flexcontainer6">
+    <div class="main-container">
+       <div class="undercontainer9">
+        <div class="under9">
+            <svg xmlns="http://www.w3.org/2000/svg" id="a" width="75" height="58" viewBox="0 0 75 58"><path d="M0,58H18.8341v-15.6023c0-12.5498,6.0538-23.4036,13.1166-33.579L21.1883,0C7.7354,10.8538,0,28.8304,0,42.7368v15.2632Zm43.0493,0h18.8341v-15.6023c0-12.5498,6.0538-23.4036,13.1166-33.579L64.2377,0c-13.453,10.8538-21.1884,28.8304-21.1884,42.7368v15.2632Z"></path></svg>
+        </div>
+       <div class="under9">
+            <p class="pclass3">Kiana has been the greatest teacher ever. Within a few months, I have gone from an absolute beginner who never touched a racket before, to being able to rally and play a full game! The other members of my group lesson were also amazing and we became friends.</p>
+        </div>
+      <div class="under9">
+            <h4>harmony mcgill</h4>
+        </div>
+
+       </div>
+       <div class="undercontainer10">
+        <img src="hockey5.jpeg" style="border-radius:400px 0  0 400px;">
+    </div>
+    </div>
+</div>
+<div class="flexcontainer7">
+    <div class="main-container">
+        <div class="undercontainer11">
+            <div class="under10">
+                <h2 style="color:white;">ready to play?<br>book a lesson today.</br></h2>
+                <p class="pclass2" style="padding-left:33px;text-align: start;color:white;">Lorem ipsum dolor sit amet, consectet adipiscing elit,sed do eiusm por<br>incididunt labore et dolore magna aliqua. Ut enim ad minim veniam,</br>quis nostrud exercitation.</p>
+                <div class="buttondiv1">
+                    <div class="underbtn1">
+                    <a href="#" class="aclass2" style="font-style: italic;letter-spacing: 3px;">Discover All lessons</a></div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+</div>
+<div class="footer">
+    <div class="main-container">
+        <div class="footer1">
+             <div class="f1">
+                <img src="tennis.svg" style="width:200px">
+        </div>
+        </div>
+        <div class="footer2">
+            <p style="text-align:right">© 2022 All rights reserved.</p></div>
+
+    </div>
+</div>
+</body>
+</html>
+

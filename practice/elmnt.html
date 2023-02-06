@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200&display=swap" rel="stylesheet">
+    </link>
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans+Devanagari:wght@900&family=Noto+Sans+JP&family=Poppins:wght@300;400&display=swap"
+        rel="stylesheet">
+    </link>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap" rel="stylesheet">
+
+
+    <script src="https://kit.fontawesome.com/bfc47d5b86.js" crossorigin="anonymous"></script>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: auto;
+            padding: 0px;
+            top: 0px;
+            background-color: #dad6d1;
+            overflow-y: scroll;
+            overflow-x:auto
+        }
+
+        /* Style the header */
+        .header {
+            background-color: #c25c08;
+            display: flex;
+            justify-content: center;
+            max-width: 100%;
+            color: #dad6d1;
+            padding: 7px;
+            font-size: 16px;
+            font-family: 'Poppins', sans-serif;
+            font-weight: normal;
+            line-height: 1.5em;
+        }
+
+        .topnav {
+            display: flex;
+            flex-direction: row;
+            overflow: hidden;
+            align-items: center;
+            justify-content: center;
+            padding:7px 0px;
+        }
+
+        .divicons {
+            width: 33.3%;
+            align-items: center;
+            display: flex;
+            flex-direction: row;      
+            flex-wrap: nowrap;   
+            padding:0px 25px;
+        }
+        .divicons a {
+            color: #c25c08;
+            text-decoration: none;
+            font-family: 'Poppins', sans-serif;
+            font-size: 20px;
+            font-weight: bold;
+            letter-spacing: 2px;
+
+        }
+        .divicons a:hover {
+            text-decoration-line: underline;
+            color: #8d4e19;
+        }
+        .divsearch {
+            display:flex;
+            flex-direction: row;
+            align-items: flex-start;
+            justify-content: flex-start;
+            width: 33.3%;    
+            padding:0px 30px;
+        }
+
+        .divlogo {
+            display:flex;
+            flex-direction: row;
+            align-items:center;
+            justify-content: center;
+            width: 33.3%;
+            text-align: center;
+        
+        }
+
+        .divlogo img {
+            -webkit-transform: scale(1);
+            transform: scale(1);
+            -webkit-transition: .3s ease-in-out;
+            transition: .3s ease-in-out;
+        }
+
+        .divlogo:hover img {
+            -webkit-transform: scale(.9);
+            transform: scale(.9);
+        }
+
+        h2 {
+            font-family: 'Poppins', sans-serif;
+            color: #c25c08;
+            text-decoration: none;
+            font-weight: 400;
+            line-height: 1.2em;
+            font-size: 25px;
+        margin:0px;
+            
+
+        }
+        .h2class1{
+            font-family: 'Poppins', sans-serif;
+            color: #c25c08;
+            text-decoration: none;
+            font-weight: normal;
+            text-align: center;
+            font-size:25px;
+
+        }
+
+        .background {
+            overflow: hidden;
+            height: 100%;
+            width: 100%;
+            background-image: url('background.jpeg');
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            
+        }
+
+        .topcontainer{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 42em;
+            margin-left:auto;
+            margin-right:auto;
+
+        }
+        .topcontainer1{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: row;
+            flex-wrap: wrap;
+            gap:33px;
+            width: 1280px;
+            
+        }
+
+        h3 {
+            font-family: 'Poppins', sans-serif;
+            color: white;
+            letter-spacing: 5px;
+            font-size: 50px;
+            font-weight: 400;
+            line-height: 1.1em;
+            font-style: normal;
+            text-align: center;
+            margin:0px;
+
+        }
+
+        h1 {
+            text-align: center;
+            font-family: 'Libre Baskerville', serif;
+            color: white;
+            font-size: 120px;
+            font-weight: 300;
+            font-style: normal;
+            letter-spacing: 2px; 
+            margin:0px;
+        }
+
+        .buttondiv {
+            align-items: center;
+            
+        }
+
+        .underbtn {
+            width: 320px;
+            border-radius: 50px;
+            background-color: white;
+            transform: translateY(-20px);
+            
+
+        }
+
+        .underbtn:hover {
+            transform: translateY(-30px);
+            transition-duration: 1.5s;
+        }
+
+        .underbtn a:hover {
+            background-color: #c25c08;
+            color: white;
+        }
+
+        a{
+            display: inline-block;
+            width: 320px;
+            border-radius: 50px;
+            text-align: center;
+            line-height: 2.5em;
+            color: #c25c08;
+            font-family: 'Poppins', sans-serif;
+            font-size: 22px;
+
+        }
+
+        .container {
+            display: flex;
+            flex-direction: row;
+            align-items: flex-start;
+            justify-content: flex-start;
+            margin-top: 8em;
+        }
+
+        .flexcontainer {
+            display: flex;
+            flex-direction: row;
+            align-items: flex-start;
+            justify-content: flex-start;  
+            flex-wrap: wrap;
+            width:100%;
+        }
+
+        #col1 {
+            
+            width: 45%;
+            
+        }
+        #navigation{
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .col2 {
+            margin-left: auto;
+            width: 45%;
+
+        }
+
+        .pclass {
+
+            margin-top: -15px;
+            font-family: 'Poppins', sans-serif;
+            color: #c25c08;
+            font-size: 25px;
+            font-weight: normal;
+
+        }
+
+        .bold1 {
+            font-size: 30px;
+        }
+
+        .spanclass {
+            position: absolute;
+            border-radius: 100%;
+            margin-left: 290px;
+            margin-top: 10px;
+            width: 50px;
+            height: 50px;
+            background-color: white;
+            font-family: 'Poppins', sans-serif;
+            font-size: .857em;
+            text-align: center;
+            font-weight: 700px;
+
+        }
+
+        .addtocart {
+            
+            font-family: 'Poppins', sans-serif;
+            color: #c25c08;
+            font-size: 22px;
+            text-transform: uppercase;
+            font-weight: normal;
+            letter-spacing: 2px;
+
+        }
+
+        .addtocart:hover {
+            color: #8d4e19;
+        }
+
+        .addtocart1 {
+
+            margin-left: 400px;
+            position: relative;
+            font-family: 'Poppins', sans-serif;
+            color: #c25c08;
+            font-size: 22px;
+            text-transform: uppercase;
+            font-weight: normal;
+            letter-spacing: 2px;
+        }
+
+        .addtocart1:hover {
+            color: #8d4e19;
+        }
+
+        .flexcontainer1 {
+            position: relative;
+            margin-top: 0px;
+            height: 250px;
+            width: 560px;
+        }
+
+        .flexcontainer2 {
+            margin-top: 40px;
+            height: 100px;
+            width: 25em;
+        }
+
+        .flexcontainer3 {
+            height: 80px;
+            width: 25em;
+        }
+
+        .h2class {
+            font-family: 'Libre Baskerville', serif;
+            font-size: 75px;
+            font-weight: 300px;
+            text-transform: capitalize;
+            line-height: 1.1em;
+            margin-top: -9.5px;
+        }
+
+        .aclass {
+            position: absolute;
+            display: block;
+            color: #c25c08;
+            text-align: center;
+            text-decoration: none;
+            font-family: 'Poppins', sans-serif;
+            font-size: 20px;
+            margin-top: 38px;
+            letter-spacing: 2px;
+            text-decoration-line: underline;
+
+        }
+        @media (min-width:800px) {
+        .background .topcontainer .topcontainer1{
+            width:100%;
+        }
+    }
+
+        .aclass:hover {
+            transform: translateY(-10px);
+            transition-duration: 1.5s;
+            color: #8d4e19;
+        }
+
+        .rate {
+            display: block;
+            width: 84px;
+            height: 30px;
+            margin-top: -20px;
+            text-decoration: line-through;
+            font-size: 25px;
+            font-weight: normal;
+            font-style: normal;
+            opacity: 0.4;
+            font-family: 'Poppins', sans-serif;
+            color: #c25c08;
+        }
+
+        .rate1 {
+            display: block;
+            width: 84px;
+            margin-top: -30px;
+            margin-left: 90px;
+            text-decoration: underline;
+            font-size: 25px;
+            font-weight: bolder;
+            font-family: 'Poppins', sans-serif;
+            color: #c25c08;
+        }
+
+        .container2 {
+            display: flex;
+            height: 500px;
+            width: 80em;
+        }
+
+        .container3 {
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            margin: 0% 0% 0% 8%;
+            height: 500px;
+            width: 38em;
+            align-content: space-around;
+
+        }
+        .container4{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            width: 1280px;
+            height: 50em;
+            border:1px solid black;
+            margin-left: auto;
+            margin-right:auto;
+            margin-top: 10%;   
+
+        }
+        .flexcontainer4 {
+            justify-content: center;
+            height: 100px;
+            width: 900px;
+            margin-left:10em;
+            
+        }
+        .flexcontainer5{
+        
+            height:75px;
+            width:600px;
+            position: absolute;
+            text-align: center;
+            margin-top:7em;
+        }
+        .container5{
+            position:absolute;
+            width:80em;
+            height:35em;
+            margin-top:12em;
+            border:2px solid black;
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            align-content: space-between;
+
+        }
+        .col3{
+            border:1px solid black;
+            width: 380px;
+            height: 550px;
+            
+            }
+
+        .col4{
+            border:1px solid red;
+            width: 380px;
+            height: 550px;
+        
+            }
+            .col5{
+            border:1px solid blue;
+            width: 380px;
+            height: 550px;
+            
+
+            }
+
+    </style>
+</head>
+
+<body>
+
+    <div class="header">Free international shipping on orders over $99</div>
+    <div class="topnav">
+        <div class="divsearch">
+            <i class='fa fa-search' style="color:#c25c08"></i>
+        </div>
+        <div class="divlogo">
+            <img src="logo.svg" style="width:250px; cursor:pointer;"></img>
+        </div>
+        <div class="divicons">
+            <a href="#"style="width:150px">COSTUMES</a>
+            <a href="#" style="width:120px">TOYS</a>
+            <a href="#" style="width:120px">SALE</a>
+            <img src="bagicon.png" style="height:60px; cursor: pointer;"></img>
+            
+            
+
+        </div>
+        
+    </div>
+
+    <div class="background">
+        <div class="topcontainer">
+            <div class="topcontainer1">
+            <h3>Handmade Luxury</h3>
+            <h1>Children's Costumes</h1>
+    
+           <div class="buttondiv">
+                <div class="underbtn">
+                    <a href="#" style="text-decoration: none;">DISCOVER COSTUMES</a>
+                </div>
+                </div>
+            
+        </div>
+        </div>
+    </div>
+</div>
+
+    <div class="container">
+        <div class="flexcontainer">
+            <nav id="col1">
+                <ul id="navigation">>
+               <li><a href="#" style="width:343px; text-decoration: none;"></li>
+                <li><span class="spanclass">Sale!</span></li>
+                <li>><img src="sale1.jpeg" style="width:343px"></img></li>
+                   <li><h2>Hedgehog Costume</h2></li>
+                   <!-- <div class="rate">$59.99</div>
+                    <div class="rate1">$49.99</div>
+                    <a href="#" class="addtocart">ADD TO CART</a>-->
+                   </nav>
+                </ul>
+            </div>
+        </div>    
+            <div class="col2">
+                <a href="#" style="width:341px; text-decoration: none;">
+                    <span class="spanclass">Sale!</span>
+                    <img src="sale2.jpeg" style="width:341px">
+                    <h2>Deer Costume</h2>
+                    <!--<div class="rate">$59.99</div>
+                    <div class="rate1">$49.99</div>
+                 <a href="#" class="addtocart1">ADD TO CART</a>-->
+                </a>
+
+            </div>
+           
+        </div>
+        <div class="container2">
+            <div class="container3">
+                <div class="flexcontainer1">
+                    <h2 class="h2class">Fun Costumes, Smiling Kids</h2>
+                </div>
+                <div class="flexcontainer2">
+                    <p class="pclass">Fill your kids with excitement when they get to wear our unique costumes</p>
+                </div>
+                <div class="flexcontainer3">
+                    <a class="aclass" href="#">DISCOVER COSTUMES</a>
+                </div>
+
+
+            </div>
+        </div>
+</div>
+         <div class="container4">
+            <div class="flexcontainer4">
+            <h2 class="h2class">We also have toys!</h2>
+            </div>
+            <div class="flexcontainer5">
+                <p class="pclass" style="font-weight: normal;">Let your children learn and play with our handmade wooden toys</p>
+            </div>
+            <div class="container5">
+                <div class="col3">
+                    <a href="#" style="width:380px; text-decoration: none;">
+                        
+                    <img src="toy.jpeg" style="width:380px"></img>
+                    <h2 class="h2class1">Swimming Goldfish</h2>
+                    <span style="margin-top:-30px;text-align: center;">$34.99</span>
+                </a>
+                </div>
+                <div class="col4">
+                    <a href="#" style="width:380px; text-decoration: none;">
+                        <span class="spanclass">Sale!</span>
+                        <img src="toy2.jpeg" style="width:380px"></img>
+                        <h2 class="h2class1">Standing Stegosaurus</h2>
+                    </a>
+                </div>
+                <div class="col5">
+                    <a href="#" style="width:380px; text-decoration: none;">
+                        <img src="toy3.jpeg" style="width:380px"></img>
+                        <h2 class="h2class1">Safari Animal Set</h2>
+                        
+                    </a>
+                </div>
+            </div>
+            
+        </div>
+
+</body>
+
+</html>

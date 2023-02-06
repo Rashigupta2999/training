@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+div.static{
+    position:static;
+    border:1px solid blue;
+    text-align:center;
+    width:500px;
+}
+div.relative{
+    position:relative;
+    border:2px solid pink;
+    left:20px;
+    width:400px;
+}
+div.fixed{
+    position:relative;
+    border:2px solid red;
+    bottom:0px;
+    right:0px;
+    width:500px;
+}
+div.absolute {
+  position: absolute;
+  top: 58px;
+  left: 1000px;
+  width: 100px;
+  height: 100px;
+  border: 3px solid #73AD21;
+}
+div.sticky {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  padding: 5px;
+  background-color: #cae8ca;
+  border: 2px solid #4CAF50;
+}
+</style>
+</head>
+<h2>Position static</h2>
+<p>An element with position: static; is not positioned in any special way; it is always positioned according to the normal flow of the page:</p>
+
+<body>
+    <div class="static">This is static element</div>
+    <div class="relative">This is relative</div>
+    <div class="fixed">This is fixed</div>
+    <div class="absolute">This is absolute</div>
+    <div class="sticky">This is Sticky</div>
+
+
+</body>
+</html>

@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        .flexcontainer{
+            background-color: white;
+            display:flex;
+            flex-wrap: wrap;   
+        }
+        .flex{
+            background-color: lightgrey;
+            border:0.5px solid grey;
+            width:100px;
+            height:100px;
+        }
+        .flex1{
+            background-color: lightgrey;
+            border:0.5px solid grey;
+            height:100px;
+            width:200px;
+        }
+        .flex2{
+            background-color: lightgrey;
+            border:0.5px solid grey;
+            height:100px;
+            width:300px;
+        }
+        .flex3{
+            background-color: lightgrey;
+            border:1px solid grey;
+            height:100px;
+            width:200px;
+        }
+
+        .row{
+            display:flex;
+            flex-direction: row;
+            width:500px;
+            height:300px;
+        
+        }
+        .column{
+            display: flex;
+            flex-direction: column;
+            height:300px;
+            width:400px;
+            }
+        .column2{
+            border:0.5px solid grey;
+            height:300px;
+            width:100px;
+            background-color: lightgrey;
+           }
+           .column3{
+            flex-direction: column;
+            display: flex;
+            height:200px;
+            width:300px;
+            
+           }
+           .column4{
+            height:200px;
+            width:100px;
+            background-color: lightgrey;
+            border:0.5px solid grey;
+           }
+       
+       .row1{ 
+                display:flex;
+                flex-direction: row;
+                height:200px;
+                width:400px;
+                
+              }
+        .row2{
+            display:flex;
+            width:400px;
+            height:100px;
+        }
+        .row3{
+            background-color: lightgrey;
+            border:0.5px solid grey;
+            height:100px;
+            width:300px;
+        }
+        .row4{
+            background-color: lightgrey;
+            border:0.5px solid grey;
+            height:100px;
+            width:300px;
+        }
+        
+        
+    </style>
+</head>
+<body>
+    <div class="flexcontainer">
+        <div class="flex"></div>
+        <div class="flex"></div>
+        <div class="flex1"></div>  
+        <div class="flex"></div>
+        </div>
+   <div class="flexcontainer">
+            <div class="flex1"></div>
+            <div class="flex"></div>
+            <div class="flex1"></div>
+    </div>
+   
+    <div class="row">
+         <div class="column">
+             <div class="row1">
+                  <div class="column3">
+                    <div class="row3"></div>
+                    <div class="row4">
+                        <div class="flex3"></div>
+                    </div>
+
+                  </div>
+                  <div class="column4"></div>
+             </div>
+            <div class="row2">
+                <div class="flex"></div>
+                <div class="flex2"></div>
+            </div>
+        </div>  
+    <div class="column2"></div> 
+    </div>
+    
+    <div class="flexcontainer">
+        <div class="flex1"></div>
+        <div class="flex"></div>
+        <div class="flex1"></div>
+    </div>
+</div>
+             
+</body>
+</html>

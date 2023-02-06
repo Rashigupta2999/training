@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+/***********************match element whose having target word**************************************
+
+a[target] {
+  background-color: grey;
+}*/
+
+/************************match element whose having particular target value*************************
+
+a[target=_blank]{
+    outline: 2px dotted lightcoral;
+}*/
+
+/************************match element whose having particular title value *************************
+
+a[title~=website]{
+    border: 1px solid red;
+}*/
+
+</style>
+</head>
+<body>
+
+<h2>CSS [attribute] Selector</h2>
+<p>The links with a target attribute gets a grey background:</p>
+
+<a href="https://www.w3schools.com" title="W3 website">w3schools.com</a>
+<a href="http://www.disney.com" target="website" title="Disney-website">disney.com</a>
+<a href="http://www.wikipedia.org" target="_top">wikipedia.org</a>
+
+</body>
+</html>
+
+

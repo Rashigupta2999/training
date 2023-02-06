@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+    * {
+        box-sizing:border-box;
+    }
+    .topnavi{
+        overflow:hidden;
+        background-color: #555;
+    }
+  .topnav a{
+   float:left;
+  display: block;
+  background-color: red;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+
+  }
+  .topnav a:hover{
+    background-color: grey;
+    color:black;
+  }
+  @media screen and (min-width: 800){
+    .topnav a{
+        float:none;
+        width:100%;
+    }
+  }
+
+</style>
+</head>
+<body>
+    <h1>Responsive Navigation Menu</h1>
+    <p>Resize the browser window to see the effect: When the screen is less than 600px, the navigation menu will be displayed vertically instead of horizontally.</p>
+    <div class="topnav">
+       <a href="#">Link</a>
+       <a href="#">Link</a>
+       <a href="#">Link</a>
+     </div>
+</body>
+</html>

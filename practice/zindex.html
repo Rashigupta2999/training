@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+
+  .container{
+    position: relative;
+  } 
+  .red-border{
+    position:relative;
+    background: red;
+    z-index: 1;
+    border:2px solid;
+    height:100px;
+    margin:15px;
+  }
+  .blue-border{
+    background: blue;
+    position: absolute;
+    z-index:2;
+    border:1px;
+    height:35px;
+    left:25px;
+    top:30px;
+
+  }
+  .green-border{
+    background: green;
+    position: absolute;
+    z-index: 3;
+    border: 2px;
+    height: 50px;
+    left:-10px;
+    top:40px;
+  }
+       </style>
+    </head>
+    <body>
+        <h1>Example of z-index with position</h1>
+        <div class="container">
+            <div class="red-border">Red border with z-index 1</div>
+            <div class="blue-border">Blue border with z-index 2</div>
+            <div class="green-border">Green border with z-index 3</div>
+        </div>
+    </body>
+</html>

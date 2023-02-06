@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+div.background{
+    background: url(back.jpg) repeat;
+    border:3px solid brown;
+}
+div.transbox{
+    border:1px solid purple;
+    background-color:gray;
+    margin:30px;
+    opacity:1;
+}
+div.transbox:hover p{
+    margin:15px;
+    font-weight:bold;
+    color:#ffabcd;
+    text-decoration:Line-through;
+    opacity:0.3;
+}
+
+</style>
+</head>
+<body>
+    <div class="background">
+    <div class="transbox">
+        <p>This is the blank transbox with opacity 1 without hover </p>
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+
+<h1>The mask-image Property</h1>
+
+<h3>An SVG mask layer (formed as a star):</h3>
+<svg width="600" height="500">
+  <mask id="svgmask2">
+    <polygon fill="#ffffff" points="100,10 40,178 180,80 10,78 160,178"></polygon>
+  </mask>
+  <image xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="images.jpeg" mask="url(#svgmask2)"></image>
+</svg>
+
+<h3>Original image:</h3>
+<img src="images.jpeg" alt="Cinque Terre" width="600" height="400">
+
+</body>
+</html>
+
+
